@@ -459,6 +459,7 @@ Include Cum Girl by AGentlemanCalledB.
 Include Cute Chinchilla Girl by Guest Writers.
 Include Dalmatian by Wahn.
 Include Dark Elf by Stripes.
+Include Dark Harpy by JM Testing.
 Include Demon Brute by Wahn.
 Include Demon Fox by Voidsnaps.
 Include Dino Pack by Qazarar.
