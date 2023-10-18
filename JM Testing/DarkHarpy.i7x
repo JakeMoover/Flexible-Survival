@@ -1,4 +1,4 @@
-Dark Harpy begins here.
+Dark Harpy by JM Testing begins here.
 
 Section 1 - Creature Insertion
 
