@@ -232,15 +232,15 @@ Section 3 - Creature Responses
 
 to say Dark Harpy Wins:
 	if HP of player > 0: [Player submit]
-		say "     Player Submit WIP"
+		say "     Player Submit WIP";
 	else:
-		say "     Player Loss WIP"
+		say "     Player Loss WIP";
 
 to say Dark Harpy Loses:
 	if fightoutcome is 11: [Lust victory]
-		say "     Lust Victory WIP"
+		say "     Lust Victory WIP";
 	else:
-		say "     Player Victory WIP"
+		say "     Player Victory WIP";
 
 Section 4 - Endings
 
@@ -252,8 +252,8 @@ This is the Dark Harpy Infection rule:
 	if Player has a body of "Dark Harpy":
 		trigger ending "Dark Harpy Infection";
 		if humanity of Player < 10:
-			say "     Madness Ending WIP"
+			say "     Madness Ending WIP";
 		else:
-			say "     Survival Ending WIP"
+			say "     Survival Ending WIP";
 
 Dark Harpy ends here.
