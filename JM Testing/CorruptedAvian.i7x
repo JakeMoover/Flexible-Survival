@@ -1,12 +1,12 @@
-Dark Harpy by JM Testing begins here.
+Corrupted Avian by JM Testing begins here.
 
 Section 1 - Creature Insertion
 
 Table of CombatPrep (continued)
 name(text)	PrepFunction(text)
-"Dark Harpy"	"[PrepCombat_Dark Harpy]"
+"Corrupted Avian"	"[PrepCombat_Corrupted Avian]"
 
-to say PrepCombat_Dark Harpy:
+to say PrepCombat_Corrupted Avian:
 	setmongender 3; [creature is male];
 
 Table of Random Critters (continued)
@@ -16,42 +16,42 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Dark Harpy"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Corrupted Avian"; [name of the overall species of the infection, used for children, ...]
 	[Add the infection to appropriate lists, see Core Mechanics\Lists and Banning.i7x]
-	add "Dark Harpy" to infections of AvianList;
-	add "Dark Harpy" to infections of AvianpredList;
-	add "Dark Harpy" to infections of MythologicalList;
-	add "Dark Harpy" to infections of MaleList;
-	add "Dark Harpy" to infections of TaperedCockList;
-	add "Dark Harpy" to infections of KnottedCockList;
-	add "Dark Harpy" to infections of InternalCockList;
-	add "Dark Harpy" to infections of InternalBallsList;
-	add "Dark Harpy" to infections of FlightList;
-	add "Dark Harpy" to infections of BipedalList;
-	add "Dark Harpy" to infections of TailList;
-	add "Dark Harpy" to infections of TailweaponList;
-	add "Dark Harpy" to infections of EgglayList;
-	add "Dark Harpy" to infections of OviImpregnatorList;
-	now Name entry is "Dark Harpy"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is "Dark Harpy"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	add "Corrupted Avian" to infections of AvianList;
+	add "Corrupted Avian" to infections of AvianpredList;
+	add "Corrupted Avian" to infections of MythologicalList;
+	add "Corrupted Avian" to infections of MaleList;
+	add "Corrupted Avian" to infections of TaperedCockList;
+	add "Corrupted Avian" to infections of KnottedCockList;
+	add "Corrupted Avian" to infections of InternalCockList;
+	add "Corrupted Avian" to infections of InternalBallsList;
+	add "Corrupted Avian" to infections of FlightList;
+	add "Corrupted Avian" to infections of BipedalList;
+	add "Corrupted Avian" to infections of TailList;
+	add "Corrupted Avian" to infections of TailweaponList;
+	add "Corrupted Avian" to infections of EgglayList;
+	add "Corrupted Avian" to infections of OviImpregnatorList;
+	now Name entry is "Corrupted Avian"; [ Infection/Creature name. Capitalized. ]
+	now enemy title entry is "Corrupted Avian"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
 	now enemy Name entry is ""; [specific name of unique enemy]
 	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
-	now attack entry is "[one of]Attack A WIP[or]Attack B WIP[at random]";
-	now defeated entry is "[Dark Harpy Loses]"; [Text when monster loses. Often links to a separate function ]
-	now victory entry is "[Dark Harpy Wins]"; [Text when monster wins. Often links to a separate function ]
-	now desc entry is "     Standing before you is a Dark Harpy... WIP";  [ Description of the creature when you encounter it. ]
-	now face entry is "mostly human, an odd few scales, feathers and sharp glowing eyes giving away your infection. Black inky tears steadily flow from your eyes, staining anything they come in contact with. At least, you hope their tears.."; [ Format as "Your face is [Face of Player]." ]
+	now attack entry is "[one of]The avian lunges towards you in reckless abandon, swinging their claws wildly![or]The mutant charges towards you, dodging past your attempts to stop it in an impressive display of dexterity![at random]";
+	now defeated entry is "[Corrupted Avian Loses]"; [Text when monster loses. Often links to a separate function ]
+	now victory entry is "[Corrupted Avian Wins]"; [Text when monster wins. Often links to a separate function ]
+	now desc entry is "     Standing before you is a Corrupted Avian... WIP";  [ Description of the creature when you encounter it. ]
+	now face entry is "mostly human, an odd few scales, feathers and sharp glowing eyes giving away your infection. Black inky tears steadily flow from your eyes, staining anything they come in contact with. At least, you hope they're tears.."; [ Format as "Your face is [Face of Player]." ]
 	now body entry is "slim and sleek, large avian scales covering limbs that end in wicked talons that make it quite difficult to handle thin fabrics. Black feathers cover your shoulders and trail down your elbows. Upon your back are two large, avian wings, dripping with an inky substance"; [ Format as "Your Body is [body entry]."]
 	now skin entry is "[one of]dark black[or]sleek, dark gray[or]dark[at random]"; [ Format as "Looking at yourself, your body is covered in [skin entry] skin"]
 	now tail entry is "You have a long, thick, and somewhat unyieldy tail, the tip covered in a splay of feathers."; [ Tail description, write a whole Sentence or leave blank. ]
-	now cock entry is "[one of]knotted, dark purple[or]internally hidden, almost draconic[or]internal, knotted, purple[or]knotted[at random]"; [ Format as "You have a [cock size desc of Player] [Cock of Player] cock."]
+	now cock entry is "[one of]dark purple, knotted[or]vaugely draconic[or]slitted, knotted[or]knotted[at random]"; [ Format as "You have a [cock size desc of Player] [Cock of Player] cock."]
 	now face change entry is "your head changes into a humanoid shape, and you blink in discomfort as your vision sharpens, eyes starting to water as they turn to an inky black, contrasted by bright, softly glowing irises that indicate your gaze. A few feathers and scales grow from your cheekbones"; [ Format as "Your face tingles as [face change entry]." ]
 	now body change entry is "it seems to slim down, dark scales spreading over your limbs, hands and feet becoming wicked, avian talons. Small patches of long, dark feathers sprout from your body, large bouts covering your shoulders and back, which then sprout into ominous wings. The feathers stain anything they touch, wings dripping with the strange ink"; [ Body TF text, format as "Your body tingles as [body change entry]. ]
 	now skin change entry is "it smooths and softens, becoming a dark shade of gray"; [ Format as "Your skin feels funny as [skin change entry]." ]
 	now ass change entry is "a strange tingling sensation seems to grow in your rear. A long, draconic tail sprouts covered in leathery skin, black feathers splaying out in a fan on the tip"; [ Format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it stiffens, becoming thicker and taking on a dark purple hue. A knot grows at the base, sensation ebbing as your cock retreats into a newly formed slit"; [ Format as "Your groin tingles as [cock change entry]." ]
 	now str entry is 12;
-	now dex entry is 16;
+	now dex entry is 17;
 	now sta entry is 15;
 	now per entry is 17;
 	now int entry is 14;
@@ -71,11 +71,11 @@ When Play begins:
 	now Cunt Depth entry is 0; [ Depth in inches of female sex the infection will attempt to give a player. ]
 	now Cunt Tightness entry is 0; [ Inches circumference. 3:extremely tight, 5:tight, 7:receptive, 10:open, 11+ gaping ]
 	now SeductionImmune entry is false; [ If true, prevents seduction attacks (increasing libido) from working ]
-	now libido entry is 80;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty. ]
-	now loot entry is "dark harpy feathers";  [ Dropped item, blank for none. Case sensitive. ]
+	now libido entry is 85;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty. ]
+	now loot entry is "Corrupted Avian feathers";  [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 50;  [ Chance of loot dropping 0-100 percentage. Use 0 for no loot ]
 	now MilkItem entry is ""; [ For if the player milks the monster. Must be defined as an item somewhere, see `margay milk` as an example ]
-	now CumItem entry is "dark harpy cum"; [ For if the player milks the monster's cock. Must be defined as an item somewhere, see `sea dragon cum` as an example ]
+	now CumItem entry is "Corrupted Avian cum"; [ For if the player milks the monster's cock. Must be defined as an item somewhere, see `sea dragon cum` as an example ]
 	now TrophyFunction entry is "-"; [ A function to call for more complex loot menu options. See GenerateTrophyList_Husky_Bitch as an example ]
 	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1:tiny, 3:avg, 5:huge ]
 	now body descriptor entry is "[one of]slender[or]avian[at random]";  [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
@@ -194,66 +194,156 @@ Section 2 - Item Drop
 
 Table of Game Objects (continued)
 name	desc	weight	object
-"dark harpy feathers"	"A handful of black feathers covered in an odd substance resembling ink."	0	dark harpy feathers
+"Corrupted Avian feathers"	"A handful of black feathers covered in an odd substance resembling ink."	0	Corrupted Avian feathers
 
-dark harpy feathers is a grab object.
-Usedesc of dark harpy feathers is "[DarkHarpyFeatherUse]".
+Corrupted Avian feathers is a grab object.
+Usedesc of Corrupted Avian feathers is "[CorruptedAvianFeatherUse]".
 
 It is temporary.
 
-to say DarkHarpyFeatherUse:
+to say CorruptedAvianFeatherUse:
 	say "As you examine the feathers, the black substance starts to stain your skin, feathers becoming indistinguishable from a crows as the infection is spread.";
-	infect "Dark Harpy";
+	infect "Corrupted Avian";
 
-instead of sniffing dark harpy feathers:
+instead of sniffing Corrupted Avian feathers:
 	say "It smells like ink... whatever that smells like.";
 
 
 	Table of Game Objects (continued)
 name	desc	weight	object
-"dark harpy cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Corrupted Harpy Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	dark harpy cum
+"Corrupted Avian cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Corrupted Harpy Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	Corrupted Avian cum
 
-dark harpy cum is a grab object.
-dark harpy cum is cum.
-dark harpy cum is infectious.
-Strain of dark harpy cum is "Dark Harpy".
-Usedesc of dark harpy cum is "[dark harpy cum use]".
+Corrupted Avian cum is a grab object.
+Corrupted Avian cum is cum.
+Corrupted Avian cum is infectious.
+Strain of Corrupted Avian cum is "Corrupted Avian".
+Usedesc of Corrupted Avian cum is "[Corrupted Avian cum use]".
 
-to say dark harpy cum use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+to say Corrupted Avian cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like, even a bit maddening... Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 10;
 
-instead of sniffing dark harpy cum:
+instead of sniffing Corrupted Avian cum:
 	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty.";
 
 
 Section 3 - Creature Responses
 
-to say Dark Harpy Wins:
+to say Corrupted Avian Wins:
 	if HP of player > 0: [Player submit]
 		say "     Player Submit WIP";
-	else:
+	else: [Player beaten up]
 		say "     Player Loss WIP";
 
-to say Dark Harpy Loses:
+to say Corrupted Avian Loses:
 	if fightoutcome is 11: [Lust victory]
-		say "     Lust Victory WIP";
-	else:
+		say "     'Fuuuck, please!' The corrupted avian stumbles, a hand shooting down to his crotch to jerk his hardened shafts as he whimpers. 'E- Everything is already too much! Ghhh, I- I don't want to give in, but need to fuck someone- something! Please!' With the desperate infected begging beneath you, [bold type]He's yours to please yourself with, should you desire to do so.[roman type][line break]";
+		now sextablerun is 0;
+		blank out the whole of table of fucking options;
+		[]
+		if Player is male:
+			choose a blank row in table of fucking options; [Special options 1, fucking 2, riding 3, oral 4, other 5]
+			now title entry is "Fuck him";
+			now sortorder entry is 2;
+			now description entry is "Screw the needy avian?";
+		[]
+			choose a blank row in table of fucking options;
+			now title entry is "Fellatio";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work?";
+		[]
+			if "Dominant" is listed in feats of player:
+				choose a blank row in table of fucking options;
+				now title entry is "Breed him like a bitch";
+				now sortorder entry is 1;
+				now description entry is "Put him in his place like the whore he is?";
+		[]
+		if Player is female:
+			choose a blank row in table of fucking options;
+			now title entry is "Cunnilingus";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work?";
+		[]
+			if "Dominant" is listed in feats of player:
+				choose a blank row in table of fucking options;
+				now title entry is "Take control and ride him";
+				now sortorder entry is 1;
+				now description entry is "Pin him down and ride him on your own terms?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Suck him off";
+			now sortorder entry is 4;
+			now description entry is "Help the conflicted infected blow off some steam?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Ride his dick";
+			now sortorder entry is 3;
+			now description entry is "Get on top of him?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Get down on all fours";
+			now sortorder entry is 2;
+			now description entry is "Give the desperate avian what he wants?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Milk him for cum";
+			now sortorder entry is 5;
+			now description entry is "Give him some relief while taking a prize?";
+		[]
+		repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Leave him to his lusts[as]0[end link][line break]";
+	now calcnumber is -1;
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if nam is "Fuck him":
+					say "[FuckingDHarpy]";
+				else if nam is "Fellatio":
+					say "[FacefuckingDHarpy]";
+				else if nam is "Breed him like a bitch":
+					say "[BreedingDHarpy]";
+				else if nam is "Cunnilingus":
+					say "[CunnilDHarpy]";
+				else if nam is "Take control and ride him":
+					say "[VagDomDHarpy]";
+				else if nam is "Suck him off":
+					say "[OralConsentDHarpy]";
+				else if nam is "Ride his dick":
+					say "[RidingDHarpy]";
+				else if nam is "Get down on all fours":
+					say "[MountedConsentDHarpy]";
+				else if nam is "Milk him for cum":
+					say "[MilkingDHarpy]";
+		else if calcnumber is 0:
+			say "Make him deal with his own problems?";
+			if Player consents:
+				say "As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
+				now sextablerun is 1;
+	else: [Beaten without lust]
 		say "     Player Victory WIP";
 
 Section 4 - Endings
 
 Table of GameEndings (continued)
 Name (text)	Type (text)	Subtype (text)	Ending (rule)	Priority (number)	Triggered (truth state)
-"Dark Harpy Infection"	"Infection"	""	Dark Harpy Infection rule	1000	false
+"Corrupted Avian Infection"	"Infection"	""	Corrupted Avian Infection rule	1000	false
 
-This is the Dark Harpy Infection rule:
-	if Player has a body of "Dark Harpy":
-		trigger ending "Dark Harpy Infection";
+This is the Corrupted Avian Infection rule:
+	if Player has a body of "Corrupted Avian":
+		trigger ending "Corrupted Avian Infection";
 		if humanity of Player < 10:
 			say "     Madness Ending WIP";
 		else:
 			say "     Survival Ending WIP";
 
-Dark Harpy ends here.
+Corrupted Avian ends here.
