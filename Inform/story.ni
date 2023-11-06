@@ -451,6 +451,7 @@ Include Chocolate Lab by Stripes.
 Include Clockwork Fox by Stripes.
 Include Copper Dragoness by Kurainyx.
 Include Corota by Stripes.
+Include Corrupted Avian by JM Testing
 Include Corrupted Spawner by Stripes.
 Include Cougar by Stripes.
 Include Cowboy Cuntboy by Wahn.
@@ -459,7 +460,6 @@ Include Cum Girl by AGentlemanCalledB.
 Include Cute Chinchilla Girl by Guest Writers.
 Include Dalmatian by Wahn.
 Include Dark Elf by Stripes.
-Include Dark Harpy by JM Testing.
 Include Demon Brute by Wahn.
 Include Demon Fox by Voidsnaps.
 Include Dino Pack by Qazarar.
