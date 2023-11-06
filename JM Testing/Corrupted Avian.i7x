@@ -292,43 +292,43 @@ to say Corrupted Avian Loses:
 			now description entry is "Give him some relief while taking a prize?";
 		[]
 		repeat with y running from 1 to number of filled rows in table of fucking options:
-		choose row y from the table of fucking options;
-		say "[link][y] - [title entry][as][y][end link][line break]";
-	say "[link]0 - Leave him to his lusts[as]0[end link][line break]";
-	now calcnumber is -1;
-	while sextablerun is 0:
-		say "Pick the corresponding number> [run paragraph on]";
-		get a number;
-		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
-			now current menu selection is calcnumber;
-			choose row calcnumber in table of fucking options;
-			say "[title entry]: [description entry]";
-			if Player consents:
-				let nam be title entry;
-				now sextablerun is 1;
-				if nam is "Fuck him":
-					say "[FuckingDHarpy]";
-				else if nam is "Fellatio":
-					say "[FacefuckingDHarpy]";
-				else if nam is "Breed him like a bitch":
-					say "[BreedingDHarpy]";
-				else if nam is "Cunnilingus":
-					say "[CunnilDHarpy]";
-				else if nam is "Take control and ride him":
-					say "[VagDomDHarpy]";
-				else if nam is "Suck him off":
-					say "[OralConsentDHarpy]";
-				else if nam is "Ride his dick":
-					say "[RidingDHarpy]";
-				else if nam is "Get down on all fours":
-					say "[MountedConsentDHarpy]";
-				else if nam is "Milk him for cum":
-					say "[MilkingDHarpy]";
-		else if calcnumber is 0:
-			say "Make him deal with his own problems?";
-			if Player consents:
-				say "As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
-				now sextablerun is 1;
+			choose row y from the table of fucking options;
+			say "[link][y] - [title entry][as][y][end link][line break]";
+		say "[link]0 - Leave him to his lusts[as]0[end link][line break]";
+		now calcnumber is -1;
+		while sextablerun is 0:
+			say "Pick the corresponding number> [run paragraph on]";
+			get a number;
+			if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+				now current menu selection is calcnumber;
+				choose row calcnumber in table of fucking options;
+				say "[title entry]: [description entry]";
+				if Player consents:
+					let nam be title entry;
+					now sextablerun is 1;
+					if nam is "Fuck him":
+						say "[FuckingDHarpy]";
+					else if nam is "Fellatio":
+						say "[FacefuckingDHarpy]";
+					else if nam is "Breed him like a bitch":
+						say "[BreedingDHarpy]";
+					else if nam is "Cunnilingus":
+						say "[CunnilDHarpy]";
+					else if nam is "Take control and ride him":
+						say "[VagDomDHarpy]";
+					else if nam is "Suck him off":
+						say "[OralConsentDHarpy]";
+					else if nam is "Ride his dick":
+						say "[RidingDHarpy]";
+					else if nam is "Get down on all fours":
+						say "[MountedConsentDHarpy]";
+					else if nam is "Milk him for cum":
+						say "[MilkingDHarpy]";
+			else if calcnumber is 0:
+				say "Make him deal with his own problems?";
+				if Player consents:
+					say "As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
+					now sextablerun is 1;
 	else: [Beaten without lust]
 		say "     Player Victory WIP";
 
