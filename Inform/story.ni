@@ -451,7 +451,7 @@ Include Chocolate Lab by Stripes.
 Include Clockwork Fox by Stripes.
 Include Copper Dragoness by Kurainyx.
 Include Corota by Stripes.
-Include Corrupted Avian by JM Testing
+Include Corrupted Avian by JM Testing.
 Include Corrupted Spawner by Stripes.
 Include Cougar by Stripes.
 Include Cowboy Cuntboy by Wahn.
