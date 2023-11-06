@@ -272,24 +272,24 @@ to say Corrupted Avian Loses:
 				now description entry is "Pin him down and ride him on your own terms?";
 		[]
 		choose a blank row in table of fucking options;
-			now title entry is "Suck him off";
-			now sortorder entry is 4;
-			now description entry is "Help the conflicted infected blow off some steam?";
+		now title entry is "Suck him off";
+		now sortorder entry is 4;
+		now description entry is "Help the conflicted infected blow off some steam?";
 		[]
 		choose a blank row in table of fucking options;
-			now title entry is "Ride his dick";
-			now sortorder entry is 3;
-			now description entry is "Get on top of him?";
+		now title entry is "Ride his dick";
+		now sortorder entry is 3;
+		now description entry is "Get on top of him?";
 		[]
 		choose a blank row in table of fucking options;
-			now title entry is "Get down on all fours";
-			now sortorder entry is 2;
-			now description entry is "Give the desperate avian what he wants?";
+		now title entry is "Get down on all fours";
+		now sortorder entry is 2;
+		now description entry is "Give the desperate avian what he wants?";
 		[]
 		choose a blank row in table of fucking options;
-			now title entry is "Milk him for cum";
-			now sortorder entry is 5;
-			now description entry is "Give him some relief while taking a prize?";
+		now title entry is "Milk him for cum";
+		now sortorder entry is 5;
+		now description entry is "Give him some relief while taking a prize?";
 		[]
 		repeat with y running from 1 to number of filled rows in table of fucking options:
 			choose row y from the table of fucking options;
