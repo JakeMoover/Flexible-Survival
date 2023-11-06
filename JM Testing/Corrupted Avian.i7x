@@ -73,7 +73,7 @@ When Play begins:
 	now SeductionImmune entry is false; [ If true, prevents seduction attacks (increasing libido) from working ]
 	now libido entry is 85;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty. ]
 	now loot entry is "Corrupted Avian feathers";  [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 50;  [ Chance of loot dropping 0-100 percentage. Use 0 for no loot ]
+	now lootchance entry is 30;  [ Chance of loot dropping 0-100 percentage. Use 0 for no loot ]
 	now MilkItem entry is ""; [ For if the player milks the monster. Must be defined as an item somewhere, see `margay milk` as an example ]
 	now CumItem entry is "Corrupted Avian cum"; [ For if the player milks the monster's cock. Must be defined as an item somewhere, see `sea dragon cum` as an example ]
 	now TrophyFunction entry is "-"; [ A function to call for more complex loot menu options. See GenerateTrophyList_Husky_Bitch as an example ]
@@ -331,6 +331,48 @@ to say Corrupted Avian Loses:
 				now sextablerun is 1;
 	else: [Beaten without lust]
 		say "     Player Victory WIP";
+
+to say FuckingDHarpy:
+	say "Player fucks DHarp";
+	CreatureSexAftermath "Corrupted Avian" receives "AssFuck" from "Player";
+
+to say FaceFuckingDHarpy:
+	say "Player face fucks DHarp";
+	CreatureSexAftermath "Corrupted Avian" receives "OralCock" from "Player";
+
+to say BreedingDHarpy:
+	say "Player breeds DHarp";
+	CreatureSexAftermath "Corrupted Avian" receives "AssFuck" from "Player";
+
+to say CunnilDHarpy:
+	say "Player eaten out by DHarp";
+	CreatureSexAftermath "Player" receives "OralPussy" from "Corrupted Avian";
+
+to say VagDomDHarpy:
+	say "Player dominantly rides DHarp";
+	CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
+
+to say OralConsentDHarpy:
+	say "Player consents to suck off DHarp";
+	CreatureSexAftermath "Player" receives "OralCock" from "Corrupted Avian";
+
+to say RidingDHarpy:
+	say "Player rides DHarp";
+	if Player is female:
+		CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
+	else:
+		CreatureSexAftermath "Player" receives "AssFuck" from "Corrupted Avian";
+
+to say MountedConsentDHarpy:
+	say "Player consents to be fucked by DHarp";
+	if Player is female:
+		CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
+	else:
+		CreatureSexAftermath "Player" receives "AssFuck" from "Corrupted Avian";
+
+to say MilkingDHarpy:
+	say "Player milks DHarp";
+	ItemGain corrupted avian cum by 1;
 
 Section 4 - Endings
 
