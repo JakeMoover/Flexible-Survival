@@ -329,6 +329,7 @@ to say Corrupted Avian Loses:
 				if Player consents:
 					say "As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
 					now sextablerun is 1;
+					
 	else: [Beaten without lust]
 		say "     Player Victory WIP";
 
