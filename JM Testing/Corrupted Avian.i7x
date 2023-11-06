@@ -238,97 +238,97 @@ to say Corrupted Avian Wins:
 
 to say Corrupted Avian Loses:
 	if fightoutcome is 11: [Lust victory]
-	say "     'Fuuuck, please!' The corrupted avian stumbles, a hand shooting down to his crotch to jerk his hardened shafts as he whimpers. 'E- Everything is already too much! Ghhh, I- I don't want to give in, but need to fuck someone- something! Please!' With the desperate infected begging beneath you, [bold type]He's yours to please yourself with, should you desire to do so.[roman type][line break]";
-	now sextablerun is 0;
-	blank out the whole of table of fucking options;
-	[]
-	if Player is male:
-		choose a blank row in table of fucking options; [Special options 1, fucking 2, riding 3, oral 4, other 5]
-		now title entry is "Fuck him";
-		now sortorder entry is 2;
-		now description entry is "Screw the needy avian?";
-	[]
-		choose a blank row in table of fucking options;
-		now title entry is "Fellatio";
-		now sortorder entry is 4;
-		now description entry is "Put his mouth to good work?";
-	[]
-		if "Dominant" is listed in feats of player:
+		say "     'Fuuuck, please!' The corrupted avian stumbles, a hand shooting down to his crotch to jerk his hardened shafts as he whimpers. 'E- Everything is already too much! Ghhh, I- I don't want to give in, but need to fuck someone- something! Please!' With the desperate infected begging beneath you, [bold type]He's yours to please yourself with, should you desire to do so.[roman type][line break]";
+		now sextablerun is 0;
+		blank out the whole of table of fucking options;
+		[]
+		if Player is male:
+			choose a blank row in table of fucking options; [Special options 1, fucking 2, riding 3, oral 4, other 5]
+			now title entry is "Fuck him";
+			now sortorder entry is 2;
+			now description entry is "Screw the needy avian?";
+		[]
 			choose a blank row in table of fucking options;
-			now title entry is "Breed him like a bitch";
-			now sortorder entry is 1;
-			now description entry is "Put him in his place like the whore he is?";
-	[]
-	if Player is female:
-		choose a blank row in table of fucking options;
-		now title entry is "Cunnilingus";
-		now sortorder entry is 4;
-		now description entry is "Put his mouth to good work?";
-	[]
-		if "Dominant" is listed in feats of player:
+			now title entry is "Fellatio";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work?";
+		[]
+			if "Dominant" is listed in feats of player:
+				choose a blank row in table of fucking options;
+				now title entry is "Breed him like a bitch";
+				now sortorder entry is 1;
+				now description entry is "Put him in his place like the whore he is?";
+		[]
+		if Player is female:
 			choose a blank row in table of fucking options;
-			now title entry is "Take control and ride him";
-			now sortorder entry is 1;
-			now description entry is "Pin him down and ride him on your own terms?";
-	[]
-	choose a blank row in table of fucking options;
-		now title entry is "Suck him off";
-		now sortorder entry is 4;
-		now description entry is "Help the conflicted infected blow off some steam?";
-	[]
-	choose a blank row in table of fucking options;
-		now title entry is "Ride his dick";
-		now sortorder entry is 3;
-		now description entry is "Get on top of him?";
-	[]
-	choose a blank row in table of fucking options;
-		now title entry is "Get down on all fours";
-		now sortorder entry is 2;
-		now description entry is "Give the desperate avian what he wants?";
-	[]
-	choose a blank row in table of fucking options;
-		now title entry is "Milk him for cum";
-		now sortorder entry is 5;
-		now description entry is "Give him some relief while taking a prize?";
-	[]
-	repeat with y running from 1 to number of filled rows in table of fucking options:
-		choose row y from the table of fucking options;
-		say "[link][y] - [title entry][as][y][end link][line break]";
-	say "[link]0 - Leave him to his lusts[as]0[end link][line break]";
-	now calcnumber is -1;
-	while sextablerun is 0:
-		say "Pick the corresponding number> [run paragraph on]";
-		get a number;
-		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
-			now current menu selection is calcnumber;
-			choose row calcnumber in table of fucking options;
-			say "[title entry]: [description entry]";
-			if Player consents:
-				let nam be title entry;
-				now sextablerun is 1;
-				if nam is "Fuck him":
-					say "[FuckingDHarpy]";
-				else if nam is "Fellatio":
-					say "[FacefuckingDHarpy]";
-				else if nam is "Breed him like a bitch":
-					say "[BreedingDHarpy]";
-				else if nam is "Cunnilingus":
-					say "[CunnilDHarpy]";
-				else if nam is "Take control and ride him":
-					say "[VagDomDHarpy]";
-				else if nam is "Suck him off":
-					say "[OralConsentDHarpy]";
-				else if nam is "Ride his dick":
-					say "[RidingDHarpy]";
-				else if nam is "Get down on all fours":
-					say "[MountedConsentDHarpy]";
-				else if nam is "Milk him for cum":
-					say "[MilkingDHarpy]";
-		else if calcnumber is 0:
-			say "Make him deal with his own problems?";
-			if Player consents:
-				say "     As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
-				now sextablerun is 1;
+			now title entry is "Cunnilingus";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work?";
+		[]
+			if "Dominant" is listed in feats of player:
+				choose a blank row in table of fucking options;
+				now title entry is "Take control and ride him";
+				now sortorder entry is 1;
+				now description entry is "Pin him down and ride him on your own terms?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Suck him off";
+			now sortorder entry is 4;
+			now description entry is "Help the conflicted infected blow off some steam?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Ride his dick";
+			now sortorder entry is 3;
+			now description entry is "Get on top of him?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Get down on all fours";
+			now sortorder entry is 2;
+			now description entry is "Give the desperate avian what he wants?";
+		[]
+		choose a blank row in table of fucking options;
+			now title entry is "Milk him for cum";
+			now sortorder entry is 5;
+			now description entry is "Give him some relief while taking a prize?";
+		[]
+		repeat with y running from 1 to number of filled rows in table of fucking options:
+			choose row y from the table of fucking options;
+			say "[link][y] - [title entry][as][y][end link][line break]";
+		say "[link]0 - Leave him to his lusts[as]0[end link][line break]";
+		now calcnumber is -1;
+		while sextablerun is 0:
+			say "Pick the corresponding number> [run paragraph on]";
+			get a number;
+			if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+				now current menu selection is calcnumber;
+				choose row calcnumber in table of fucking options;
+				say "[title entry]: [description entry]";
+				if Player consents:
+					let nam be title entry;
+					now sextablerun is 1;
+					if nam is "Fuck him":
+						say "[FuckingDHarpy]";
+					else if nam is "Fellatio":
+						say "[FacefuckingDHarpy]";
+					else if nam is "Breed him like a bitch":
+						say "[BreedingDHarpy]";
+					else if nam is "Cunnilingus":
+						say "[CunnilDHarpy]";
+					else if nam is "Take control and ride him":
+						say "[VagDomDHarpy]";
+					else if nam is "Suck him off":
+						say "[OralConsentDHarpy]";
+					else if nam is "Ride his dick":
+						say "[RidingDHarpy]";
+					else if nam is "Get down on all fours":
+						say "[MountedConsentDHarpy]";
+					else if nam is "Milk him for cum":
+						say "[MilkingDHarpy]";
+			else if calcnumber is 0:
+				say "Make him deal with his own problems?";
+				if Player consents:
+					say "     As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
+					now sextablerun is 1;
 	else: [Beaten without lust]
 		say "     Player Victory WIP";
 
