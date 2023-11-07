@@ -34,17 +34,17 @@ When Play begins:
 	add "Corrupted Avian" to infections of OviImpregnatorList;
 	now Name entry is "Corrupted Avian"; [ Infection/Creature name. Capitalized. ]
 	now enemy title entry is "Corrupted Avian"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy Name entry is "Sarqen"; [specific name of unique enemy]
+	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
 	now attack entry is "[one of]The avian lunges towards you in reckless abandon, swinging their claws wildly![or]The mutant charges towards you, dodging past your attempts to stop it in an impressive display of dexterity![at random]";
 	now defeated entry is "[Corrupted Avian Loses]"; [Text when monster loses. Often links to a separate function ]
 	now victory entry is "[Corrupted Avian Wins]"; [Text when monster wins. Often links to a separate function ]
-	now desc entry is "     Standing before you is a Corrupted Avian... WIP";  [ Description of the creature when you encounter it. ]
+	now desc entry is "     Stumbling into your path is a slightly frantic looking mutant, long black hair and feathers split and frayed. His naked body appears fairly humanoid, slim and lean but with a well toned torso with dark gray skin, and long elven ears twitching at the side of his head. Despite his dark elf appearance, it's clear he's suffered from the infection as feathers grow from his cheekbones, shoulders and elbows, black wings drooping behind him and dripping an inky fluid. His legs and forearms are also covered in dark scales, ending in wicked talons. Unlike the rest of his body, though, his tail and even cocks seem to be more draconic in nature, having two knotted, dark purple shafts emerging from a slit while a long, thick tail lashes behind him. [line break]     You seem to startle the mutant as he stumbles backwards, quickly orienting himself into a fighting pose. You can't quite tell whether he's trying to defend himself, or looks to rape you like most of the other wandering mutants, as while you can see the familiar lust-crazed madness in his eyes, theres a conflicted desperation in them as well. Either way, it looks like you have a fight on your hands!";  [ Description of the creature when you encounter it. ]
 	now face entry is "mostly human, an odd few scales, feathers and sharp glowing eyes giving away your infection. Black inky tears steadily flow from your eyes, staining anything they come in contact with. At least, you hope they're tears.."; [ Format as "Your face is [Face of Player]." ]
 	now body entry is "slim and sleek, large avian scales covering limbs that end in wicked talons that make it quite difficult to handle thin fabrics. Black feathers cover your shoulders and trail down your elbows. Upon your back are two large, avian wings, dripping with an inky substance"; [ Format as "Your Body is [body entry]."]
 	now skin entry is "[one of]dark black[or]sleek, dark gray[or]dark[at random]"; [ Format as "Looking at yourself, your body is covered in [skin entry] skin"]
 	now tail entry is "You have a long, thick, and somewhat unyieldy tail, the tip covered in a splay of feathers."; [ Tail description, write a whole Sentence or leave blank. ]
-	now cock entry is "[one of]dark purple, knotted[or]vaugely draconic[or]slitted, knotted[or]knotted[at random]"; [ Format as "You have a [cock size desc of Player] [Cock of Player] cock."]
+	now cock entry is "[one of]dark purple and knotted[or]vaguely draconic[or]slitted, knotted[or]knotted[at random]"; [ Format as "You have a [cock size desc of Player] [Cock of Player] cock."]
 	now face change entry is "your head changes into a humanoid shape, and you blink in discomfort as your vision sharpens, eyes starting to water as they turn to an inky black, contrasted by bright, softly glowing irises that indicate your gaze. A few feathers and scales grow from your cheekbones"; [ Format as "Your face tingles as [face change entry]." ]
 	now body change entry is "it seems to slim down, dark scales spreading over your limbs, hands and feet becoming wicked, avian talons. Small patches of long, dark feathers sprout from your body, large bouts covering your shoulders and back, which then sprout into ominous wings. The feathers stain anything they touch, wings dripping with the strange ink"; [ Body TF text, format as "Your body tingles as [body change entry]. ]
 	now skin change entry is "it smooths and softens, becoming a dark shade of gray"; [ Format as "Your skin feels funny as [skin change entry]." ]
@@ -71,7 +71,7 @@ When Play begins:
 	now Cunt Depth entry is 0; [ Depth in inches of female sex the infection will attempt to give a player. ]
 	now Cunt Tightness entry is 0; [ Inches circumference. 3:extremely tight, 5:tight, 7:receptive, 10:open, 11+ gaping ]
 	now SeductionImmune entry is false; [ If true, prevents seduction attacks (increasing libido) from working ]
-	now libido entry is 85;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty. ]
+	now libido entry is 95;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty. ]
 	now loot entry is "Corrupted Avian feathers";  [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 30;  [ Chance of loot dropping 0-100 percentage. Use 0 for no loot ]
 	now MilkItem entry is ""; [ For if the player milks the monster. Must be defined as an item somewhere, see `margay milk` as an example ]
@@ -79,7 +79,7 @@ When Play begins:
 	now TrophyFunction entry is "-"; [ A function to call for more complex loot menu options. See GenerateTrophyList_Husky_Bitch as an example ]
 	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1:tiny, 3:avg, 5:huge ]
 	now body descriptor entry is "[one of]slender[or]avian[at random]";  [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "[one of]raptor[or]avian[at random]"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "[one of]hybrid[or]avian[at random]"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false; [ Is this a magic creature? (normally false, not sure this is actually used anywhere?) ]
 	now resbypass entry is false;  [ Bypasses Researcher bonus? almost always false ]
 	now non-infectious entry is false; [ Is this a non-infectious, non-shiftable creature? Usually false ]
@@ -234,7 +234,18 @@ to say Corrupted Avian Wins:
 	if HP of player > 0: [Player submit]
 		say "     Player Submit WIP";
 	else: [Player beaten up]
-		say "     Player Loss WIP";
+		say "     As you crumple to the corrupted avians assault, he stares down at you, lust and rationality warring in his eyes.";
+		if a random chance of 3 in 5 succeeds: [DHarp succumbs to lust, breeds player]
+			say "3 in 5, mounting";
+			if Player is female:
+				CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
+			else:
+				CreatureSexAftermath "Player" receives "AssFuck" from "Corrupted Avian";
+		else if a random chance of 2 in 5 succeeds: [DHarp partially succumbs to lust, blowjob]
+			say "2 in 5 chance, blowjob";
+			CreatureSexAftermath "Player" receives "OralCock" from "Corrupted Avian";
+		else: [DHarp resists lusts, leaves]
+			say "Despite his evident lust, double shafts erect and exposed to the air, the corrupted avian shakes his head looking conflicted and even a bit fearful. He takes an unsure step backwards, then a few more, quickly walking away before he can succumb to the infections temptations.";
 
 to say Corrupted Avian Loses:
 	if fightoutcome is 11: [Lust victory]
@@ -246,50 +257,50 @@ to say Corrupted Avian Loses:
 			choose a blank row in table of fucking options; [Special options 1, fucking 2, riding 3, oral 4, other 5]
 			now title entry is "Fuck him";
 			now sortorder entry is 2;
-			now description entry is "Screw the needy avian?";
+			now description entry is "Screw the needy avian";
 		[]
 			choose a blank row in table of fucking options;
 			now title entry is "Fellatio";
 			now sortorder entry is 4;
-			now description entry is "Put his mouth to good work?";
+			now description entry is "Put his mouth to good work";
 		[]
 			if "Dominant" is listed in feats of player:
 				choose a blank row in table of fucking options;
 				now title entry is "Breed him like a bitch";
 				now sortorder entry is 1;
-				now description entry is "Put him in his place like the whore he is?";
+				now description entry is "Put him in his place like the whore he is";
 		[]
 		if Player is female:
 			choose a blank row in table of fucking options;
 			now title entry is "Cunnilingus";
 			now sortorder entry is 4;
-			now description entry is "Put his mouth to good work?";
+			now description entry is "Put his mouth to good work";
 		[]
 			if "Dominant" is listed in feats of player:
 				choose a blank row in table of fucking options;
 				now title entry is "Take control and ride him";
 				now sortorder entry is 1;
-				now description entry is "Pin him down and ride him on your own terms?";
+				now description entry is "Pin him down and ride him on your own terms";
 		[]
 		choose a blank row in table of fucking options;
 		now title entry is "Suck him off";
 		now sortorder entry is 4;
-		now description entry is "Help the conflicted infected blow off some steam?";
+		now description entry is "Help the conflicted infected blow off some steam";
 		[]
 		choose a blank row in table of fucking options;
-		now title entry is "Ride his dick";
+		now title entry is "Ride his dicks";
 		now sortorder entry is 3;
-		now description entry is "Get on top of him?";
+		now description entry is "Get on top of him";
 		[]
 		choose a blank row in table of fucking options;
 		now title entry is "Get down on all fours";
 		now sortorder entry is 2;
-		now description entry is "Give the desperate avian what he wants?";
+		now description entry is "Give the desperate avian what he wants";
 		[]
 		choose a blank row in table of fucking options;
 		now title entry is "Milk him for cum";
 		now sortorder entry is 5;
-		now description entry is "Give him some relief while taking a prize?";
+		now description entry is "Give him some relief while taking a prize";
 		[]
 		repeat with y running from 1 to number of filled rows in table of fucking options:
 			choose row y from the table of fucking options;
@@ -302,7 +313,7 @@ to say Corrupted Avian Loses:
 			if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
 				now current menu selection is calcnumber;
 				choose row calcnumber in table of fucking options;
-				say "[title entry]: [description entry]";
+				say "[title entry]: [description entry]?";
 				if Player consents:
 					let nam be title entry;
 					now sextablerun is 1;
@@ -318,7 +329,7 @@ to say Corrupted Avian Loses:
 						say "[VagDomDHarpy]";
 					else if nam is "Suck him off":
 						say "[OralConsentDHarpy]";
-					else if nam is "Ride his dick":
+					else if nam is "Ride his dicks":
 						say "[RidingDHarpy]";
 					else if nam is "Get down on all fours":
 						say "[MountedConsentDHarpy]";
@@ -330,47 +341,153 @@ to say Corrupted Avian Loses:
 					say "     As you start to turn and leave, anger and further desperation flashes in the creatures eyes. For a moment you think he may try to attack you again, but with a distressed moan he turns to find somewhere to salvage his pride and sate his own lusts.";
 					now sextablerun is 1;
 	else: [Beaten without lust]
-		say "     Player Victory WIP";
+		say "     With a final blow, the corrupted avian collapses, panic starting to set in as he struggles and fails to get back up. With a pained grunt, he shrinks back against the floor in defeat, glaring up at you as he awaits your punishment.";
+		now sextablerun is 0;
+		blank out the whole of table of fucking options;
+		[]
+		if "Dominant" is listed in feats of Player and Player is male:
+			choose a blank row in table of fucking options;
+			now title entry is "Breed him like a bitch";
+			now sortorder entry is 1;
+			now description entry is "Put him in his place like the whore he is";
+		[]
+		if "Dominant" is listed in feats of Player and Player is female:
+			choose a blank row in table of fucking options;
+			now title entry is "Take control and ride him";
+			now sortorder entry is 1;
+			now description entry is "Pin him down and ride him on your own terms";
+		[]
+		if Player is male:
+			choose a blank row in table of fucking options;
+			now title entry is "Fuck Him";
+			now sortorder entry is 2;
+			now description entry is "Screw the fallen avian";
+		[]
+			choose a blank row in table of fucking options;
+			now title entry is "Fellatio";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work";
+		[]
+		if Player is female:
+			choose a blank row in table of fucking options;
+			now title entry is "Cunnilingus";
+			now sortorder entry is 4;
+			now description entry is "Put his mouth to good work";
+		[]
+		choose a blank row in table of fucking options;
+		now title entry is "Ride his dicks";
+		now sortorder entry is 3;
+		now description entry is "Get on top of him";
+		[]
+		choose a blank row in table of fucking options;
+		now title entry is "Suck him off";
+		now sortorder entry is 4;
+		now description entry is "Help the corrupted avian blow off some steam";
+		[]
+		choose a blank row in table of fucking options;
+		now title entry is "Milk him for cum";
+		now sortorder entry is 5;
+		now description entry is "Give him some relief while taking a prize";
+		[]
+		repeat with y running from 1 to number of filled rows in table of fucking options:
+			choose row y from the table of fucking options;
+			say "[link][y] - [title entry][as][y][end link][line break]";
+		say "[link]0 - Leave him alone[as]0[end link][line break]";
+		now calcnumber is -1;
+		while sextablerun is 0:
+			say "Pick the corresponding number> [run paragraph on]";
+			get a number;
+			if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+				now current menu selection is calcnumber;
+				choose row calcnumber in table of fucking options;
+				say "[title entry]: [description entry]?";
+				if Player consents:
+					let nam be title entry;
+					now sextablerun is 1;
+					if nam is "Fuck him":
+						say "[FuckingDHarpy]";
+					else if nam is "Fellatio":
+						say "[FacefuckingDHarpy]";
+					else if nam is "Breed him like a bitch":
+						say "[BreedingDHarpy]";
+					else if nam is "Cunnilingus":
+						say "[CunnilDHarpy]";
+					else if nam is "Take control and ride him":
+						say "[VagDomDHarpy]";
+					else if nam is "Suck him off":
+						say "[OralConsentDHarpy]";
+					else if nam is "Ride his dicks":
+						say "[MountedConsentDHarpy]";
+					else if nam is "Milk him for cum":
+						say "[MilkingDHarpy]";
+			else if calcnumber is 0:
+				say "Just leave him be?";
+				if Player consents:
+					say "     You have better things to be doing, and so you walk past the fallen mutant without a single glance. As you walk, you catch what sounds like a mix of a both relieved and dissapointed sigh behind you.";
+					now sextablerun is 1;
 
-to say FuckingDHarpy:
-	say "Player fucks DHarp";
+to say FuckingDHarpy: [Player fucks DHarp]
+	say "     Deciding to have some fun, you approach the[if fightoutcome is 11] desperate[else] fallen[end if] mutant, quickly discarding your clothing and gear off to the side. He tries his best to[if fightoutcome is 11] keep a composed demeanor[else] glare you down[end if], but keeps glancing down at your crotch with hungry anticipation. Grabbing him by the shoulders, you easily pin him down against the floor, and despite his grunt of discomfort he shows no interest in struggling, even spreading his legs as you climb over him, aligning your cock to his asshole.";
+	say "     Without warning, you thrust into him in a single, quick motion, causing the avian to let out a startled moan. You start pounding into him, moving in and out with a comfortable pace. In only a few seconds, what little resistance that was still in the mutant dwindles to nothing as he leans his head back, eyes rolling to the back of his head while he moans sluttily, the occasional whimper and strangled gasp escaping his lips. His moaning is quite loud, no doubt getting the attention of other mutants in the general area, but considering the state of the city, you're not exactly worried about any interruptions.";
+	WaitLineBreak;
+	say "     After a good bit of pounding, the feeling of cold, sharp objects on your back startles you out of your lustful haze, making you fear that you were wrong to not worry about the wandering infecteds attention. Thankfully, though, you quickly realize it's just the avian's hands, gripping onto you in the midst of your mating, albeit a bit painfully. “P-Please..!” Satisfied that you're safe, you return to fucking the mutant beneath you, who has quickly started to beg with strained whimpers during your hesitation.";
+	say "     'F-fffuck, please! More! Hhh.. harder!' He begins to beg and plead for you to go faster, to take him rougher, the best he can between his already vocal moaning. His legs wrap around your hips, hands tightening their grip on your back as you gladly comply, fully railing him against the ground in your nanite-addled rut.";
+	WaitLineBreak;
+	say "     After a few minutes of your mating, the avian's moaning grows strained, talons digging even deeper into your back, no doubt going to leave a mark when you're done. With a last strangled whimper he orgasms, ropes of cum spurting across his belly from his twin cocks, staining his dark gray skin white. You're not far behind, as the force of his climax quickly brings you to your own.";
+	say "     You both lie there for a while in the afterglow, breathing heavily and covered in sweat. The corrupted avian's limbs slide off your body, exhausted but satisfied, at least for now. You take this as your time to leave, going back to wandering the infected city after re-equipping and reclothing yourself.";
 	CreatureSexAftermath "Corrupted Avian" receives "AssFuck" from "Player";
 
-to say FaceFuckingDHarpy:
-	say "Player face fucks DHarp";
+to say FaceFuckingDHarpy: [Player facefucks DHarp]
+	say "     Deciding you want some oral relief, you command the[if fightoutcome is 11] desperate[else] defeated[end if] avian down on his knees as you remove any clothing obscuring your already hardening shaft. After a moment's hesitation[if fightoutcome is not 11] and a cautious glare[end if] he does so, eying your cock with clear lust accompanied with apprehension. You can easily make the decision for him though, as you walk forwards and grab his head, shoving him onto your dick in a single, quick motion. His surprised cry is swiftly cut off as he chokes from the sudden deepthroat.";
+	say "     You're easily able to fend off his startled attempt at shoving you off, pushing his hands away and gripping his hair to drag him across your dick. Deciding to be nice, you pull him off and give him a second to breathe, waiting patiently as he coughs and sputters, trying to catch his breath. His respite is quickly over, however, and you force him to swallow your dick once more.";
+	WaitLineBreak;
+	say "     His hands are tightly gripping your thighs, trying in vain to brace himself against your oral abuse, but no longer tries to shove you off. Though he chokes harshly each time you bring him down, you can feel him start trying to properly suck you off, struggling to wind his tongue around your shaft and bobbing his head along with your movements. He clearly isn't very experienced in blowing another man if at all, a fact made even more clear by the way you're using him as a living fleshlight.";
+	say "     Despite that all and ignoring the tears in his eyes, he works his best to blow you with just as much lust and enthusiasm as the husky sluts that roam the city. You even notice his tail start to drag from side to side, exposing him as the desperate and subby slut he is despite his once intimidating appearance.";
+	say "     Catching one of his hands start to trail down your leg and towards his own twin dicks, but you kick it to the side while reminding him of his place as your cocksleeve. While his whimpering can't make it past him choking on your cock, you can see his hand tremble as he struggles to resist his own burning needs. After a particularly hard shove that makes him gag, he returns his hand to your leg, back to trying to brace himself against your pounding.";
+	WaitLineBreak;
+	say "     Eventually, it becomes too hard to hold back any longer and you cum hard, shoving the avian's face directly into your crotch. You don't let go, even as he chokes and gags, starting to weakly struggle against your grip until your orgasm ebbs away. Once he's finally released, he reels back hacking and gasping, the cum that didn't go straight down his throat now dripping past his lips.";
+	say "     Gathering your bearings, you ready yourself to leave. Sending a last glance back towards the mutant still on his knees, you see one of his hands gingerly touching his neck while the other furiously jerks both of his shafts, expression shocked and slightly dazed, not having even wiped away your cum from his lips. You're satisfied, though, so you walk away to get on with your business, leaving the avian to contemplate his orientation alone.";
 	CreatureSexAftermath "Corrupted Avian" receives "OralCock" from "Player";
 
-to say BreedingDHarpy:
-	say "Player breeds DHarp";
+to say BreedingDHarpy: [Player breeds DHarp, special dom feat scene]
+	say "     The avian tries his best to look composed and defiant, but his lust is evident from the way he eyes your body as you disrobe yourself. It would seem he doesn't know not to mess with those stronger than him, but you can certainly think of a way to teach him… You walk forwards, roughly manhandling him, and despite his shout of surprise he doesn't try to fight back any further, at least not with any real intent to win.";
+	say "     Flipping him onto his stomach and roughly pulling his body up onto all fours,[if CockName of Player is listed in infections of KnottedCockList] a position your knotted cock is well suited to,[end if] you ignore his protesting and waste no time in shoving your cock up his hole, eliciting a mix between a pained yelp and a moan. Giving him no time to adjust or brace himself, you quickly slam in and out, tightly gripping his shoulder with one hand and his hair with the other. The fast-paced slaps of your mating and gasping moans of your prey leaving little to the imagination of any passerbys.";
+	say "     His whole body is tensed, trying his best to not collapse from your overwhelming treatment so he can further be bred as your bitch, a fact that draws a stifled and embarrassed moan when you point it out. His attempt at defiance doesn't last long, though, as with another thrust of your hips he breaks, moaning loudly like a bitch in heat, furthering his position as your fuck toy. Moving the hand on his shoulder forwards, you pull him closer into a chokehold, his ear twitching downwards as you mutter quiet degradations while he's powerless to oppose your claims.";
+	WaitLineBreak;
+	say "     Despite his once intimidating appearance and nanite-crazed rut, it appears a more submissive side of him from before the infection is winning over as while his sharp talons hold the arm around his neck, he does nothing to try and pry you off, grinding his ass back towards you every time you thrust inwards. His unwieldy tail struggles to swish from side to side in between the two of you, consumed by lust as he leans back into you. You swear he even tries to strangle out the occasional 'more' and 'harder' while still being choked.";
+	say "     Happy to oblige, you let go of the chokehold, putting a hand to the back of his head and harshly shoving him down, holding his head against the floor while keeping his ass in place, not once faltering in your brutal pace of slamming your dick in and out again.";
+	WaitLineBreak;
+	say "     You continue to breed him aggressively, making sure to put him even further in his place with degrading and humiliating taunts.[if CockName of Player is listed in infections of KnottedCockList] You manage to shove your knot in past his tight asshole, causing further moans to spill from his lips. While your thrusts are shorter now having tied your knot inside him, you still pound him with just as much force as before. Despite this[else] Despite your already savage pounding of him into the ground[end if], he still absentmindedly begs for more, completely lost in his bliss and carving lines into the ground below him with his talons.";
+	say "     Eventually, though, it becomes too much for him as his moaning grows strangled, orgasming hard and shooting off two ropes of cum from his shafts and onto the floor beneath him. Having already begun to come close to your own orgasm, the sensation of his ass tightening and contracting around your own cock sends you over the edge. With a final thrust you spill your seed into him, spending the next few moments catching your breath[if CockName of Player is listed in infections of KnottedCockList] and waiting for your knot to go down[end if]. Once you recover, you pull yourself out of him, putting back on your gear and clothes before leaving the still-trembling mutant for whatever else may stumble across him.";
 	CreatureSexAftermath "Corrupted Avian" receives "AssFuck" from "Player";
 
-to say CunnilDHarpy:
+to say CunnilDHarpy: [Player is eaten out by DHarp after winning]
 	say "Player eaten out by DHarp";
 	CreatureSexAftermath "Player" receives "OralPussy" from "Corrupted Avian";
 
-to say VagDomDHarpy:
+to say VagDomDHarpy: [Player rides DHarp vaginally, special dom feat scene]
 	say "Player dominantly rides DHarp";
 	CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
 
-to say OralConsentDHarpy:
+to say OralConsentDHarpy: [Player sucks off DHarp after winning]
 	say "Player consents to suck off DHarp";
 	CreatureSexAftermath "Player" receives "OralCock" from "Corrupted Avian";
 
-to say RidingDHarpy:
+to say RidingDHarpy: [Player rides DHarp after winning]
 	say "Player rides DHarp";
 	if Player is female:
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
 	else:
 		CreatureSexAftermath "Player" receives "AssFuck" from "Corrupted Avian";
 
-to say MountedConsentDHarpy:
+to say MountedConsentDHarpy: [Player offers themself to DHarp after lust win]
 	say "Player consents to be fucked by DHarp";
 	if Player is female:
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Corrupted Avian";
 	else:
 		CreatureSexAftermath "Player" receives "AssFuck" from "Corrupted Avian";
 
-to say MilkingDHarpy:
+to say MilkingDHarpy: [Player milks DHarp]
 	say "Player milks DHarp";
 	ItemGain corrupted avian cum by 1;
 
